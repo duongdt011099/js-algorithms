@@ -58,3 +58,5 @@ bst.insert(80);
 bst.insert(18);
 bst.insert(48);
 bst.insert(60);
+
+module.exports = BinarySearchTree;

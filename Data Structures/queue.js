@@ -12,7 +12,7 @@ class Queue {
       this.size = 0;
   }
 
-  push(val) {
+  enqueue(val) {
       const newNode = new Node(val);
       if (!this.first) {
           this.first = newNode;
@@ -25,7 +25,7 @@ class Queue {
       return this;
   }
 
-  pop() {
+  dequeue() {
       if (!this.first) return null;
       const valueToReturn = this.first;
       this.first = this.first.next;
@@ -38,4 +38,4 @@ class Queue {
   }
 }
 
-var queue = new Queue();
+module.exports = Queue;
