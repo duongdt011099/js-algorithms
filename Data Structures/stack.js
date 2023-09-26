@@ -39,3 +39,4 @@ class Stack {
 }
 
 var stack = new Stack();
+module.exports = Stack;
